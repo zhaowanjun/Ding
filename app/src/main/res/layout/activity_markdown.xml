@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="@dimen/outer_padding">
+
+    <EditText
+        android:id="@+id/et_webhook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/hint_webhook"
+        android:padding="@dimen/edit_padding"
+        android:layout_marginBottom="@dimen/vertical_margin"
+        android:textColorHint="@android:color/darker_gray"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/hint_text_size"
+        android:maxLines="5"/>
+
+    <Button
+        android:id="@+id/btn_send"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/vertical_margin"
+        android:text="@string/send"
+        android:textColor="@android:color/white"
+        android:background="@drawable/selector_btn_send"/>
+    <EditText
+        android:id="@+id/et_title"
+        android:layout_below="@id/et_webhook"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="start"
+        android:textSize="@dimen/hint_text_size"
+        android:hint="@string/hint_preview_title"
+        android:padding="@dimen/edit_padding"
+        android:background="@android:drawable/editbox_background_normal"/>
+    <EditText
+        android:id="@+id/et_markdown"
+        android:layout_below="@id/et_title"
+        android:layout_above="@id/btn_send"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="start"
+        android:textSize="@dimen/hint_text_size"
+        android:hint="@string/hint_markdown"
+        android:padding="@dimen/edit_padding"
+        android:background="@android:drawable/editbox_background_normal"/>
+</RelativeLayout>
